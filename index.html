@@ -1,0 +1,183 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+    <meta property="og:title" content="DotDev">
+    <title>DotDev</title>
+
+    <!--[if (gte mso 9)|(IE)]>
+    <style>
+        table {
+            border-collapse:collapse;
+        }
+        table,td,body,div,p,a,.h1,.h2,.h3 {
+            font-family:Avenir,Arial,sans-serif !important;
+            mso-line-height-rule:exactly !important;
+        }
+    </style>
+    <![endif]-->
+    <!--[if (gte mso 15)|(IE)]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:AllowPNG />
+            <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+    </xml>
+    <![endif]-->
+    <!--[if gte mso 15]>
+    <style>
+        table.spacertable {
+            font-size:1px;
+            line-height:0;
+            mso-margin-top-alt:1px;
+        }
+    </style>
+    <![endif]-->
+    <!--[if mso]>
+    <style>
+        td {
+            font-family:sans-serif !important;
+        }
+        td.mso-serif {
+            font-family:sans-serif !important;
+        }
+    </style>
+    <![endif]-->
+    <style type="text/css">
+
+        body {width: 100% !important; margin: 0px !important; padding: 0px !important; border: 0px !important;}
+        html, body, * {margin: 0px; padding:0px;}
+        a, td {-webkit-text-size-adjust: none;}
+        img {-ms-interpolation-mode: bicubic !important;}
+        img.a:link,img.a:visited,img.a:hover,img.a:active{text-decoration:none !important;color:#000000 !important;}
+        .black a {color: #000000 !important; text-decoration: underline !important;}
+        .blackNone a {color: #000000 !important; text-decoration: none !important;}
+
+        @media only screen and (max-width:720px) {
+            table[class=width-320], td[class=width-320], .width-320 {width: 100% !important;}
+            table[class=width-260], td[class=width-260], .width-260 {width: 304px !important;}
+            table[class=width-50], td[class=width-50], .width-50 {width:50px !important;}
+            table[class=width-10], td[class=width-10], .width-10 {width:10px !important;}
+        }
+        @media only screen and (min-device-width: 374px) and (max-device-width: 376px) {
+            table[class=width-260], td[class=width-260], .width-260 {width: 304px !important;}
+        }
+
+        /* 	iP6+ */
+        @media only screen and (min-device-width: 413px) and (max-device-width: 415px) {
+            table[class=width-260], td[class=width-260], .width-260 {width: 336px !important;}
+        }
+        
+    </style>
+</head>
+
+<div id="temp" style="width: 400px; max-width:100%; margin: 0 auto 100px;">
+    <div style="width: 100%; padding-top: 20px; text-align: center;">
+        <input style="display: block; width: 300px; height: 32px; font-size: 16px; font-family: sans-serif; margin: 0 auto 20px; padding-left: 5px; border: 1px solid grey;" type="text" placeholder="Name" id="name"></input>
+        <input style="display: block; width: 300px; height: 32px; font-size: 16px; font-family: sans-serif; margin: 0 auto 20px; padding-left: 5px; border: 1px solid grey;" type="text" placeholder="Role" id="role"></input>
+        <input style="display: block; width: 300px; height: 32px; font-size: 16px; font-family: sans-serif; margin: 0 auto 20px; padding-left: 5px; border: 1px solid grey;" type="text" placeholder="Email" id="email"></input>
+        <input style="display: block; width: 300px; height: 32px; font-size: 16px; font-family: sans-serif; margin: 0 auto 20px; padding-left: 5px; border: 1px solid grey;" type="text" placeholder="Phone" id="phone"></input>
+        <input type="button" id="button" value="Submit" style="width: 300px; height: 40px; font-size: 16px; background-color: white; border: 1px solid black; "></input>
+    </div>
+
+    <script>
+        document.querySelector('#button').addEventListener("click", function(){
+            document.querySelector('#name-target').innerText = document.querySelector('#name').value
+            document.querySelector('#role-target').innerText = document.querySelector('#role').value
+            document.querySelector('#email-target').innerText = document.querySelector('#email').value
+            document.querySelector('#email-target').href = "mailto:" + document.querySelector('#email').value
+            document.querySelector('#phone-target').innerText = document.querySelector('#phone').value
+            document.querySelector('#phone-target').href = "tel:" + document.querySelector('#phone').value.replace(/\s/g, '');
+
+            let form = document.querySelector('#temp');
+
+            form.parentNode.removeChild(form);
+        })
+    </script>
+</div>
+
+<body style="margin: 0!important; padding: 0!important;">
+<table width="320" align="left" border="0" cellpadding="0" cellspacing="0" class="width-320" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0;margin:0 auto;width:320px;background-color:#FFFFFF;border-collapse:collapse !important;">
+    <tr>
+        <td align="left" valign="middle">
+            <table width="400" class="width-320" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td height="1" width="400" class="width-320" style="font-size: 1px; line-height: 1px; height: 1px; background-color: #000000;" bgcolor="#000000">
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td height="10" style="height: 10px; font-size: 10px; line-height: 10px;">
+                        &nbsp;
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td align="left" valign="middle">
+            <table width="400" class="width-320" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td align="left" valign="middle" width="50">
+                        <table width="60" class="width-50" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td align="left" valign="middle">
+                                    <a href="https://dotdev.com.au" target="_blank">
+                                        <img src="https://new.dotdev.com.au/images/dotdev-icon.png" width="60" class="width-50" style="display:block;">
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td align="left" valign="middle" width="20">
+                        <table width="20" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td align="left" valign="middle">
+                                    &nbsp;
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td align="left" valign="middle">
+                        <table width="260" class="width-260" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF" style="table-layout: fixed">
+                            <tr>
+                                <td align="left" valign="middle" style="font-size: 16px; line-height: 24px; letter-spacing: 1px; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen-Sans,Ubuntu,Cantarell,'Helvetica Neue',sans-serif; color: #000000 !important; text-decoration: none !important; font-weight: 600;">
+                                    <span class="black" style="color: #000000 !important; text-decoration: none !important;" id="name-target">Ash Betts</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="left" valign="middle" style="font-size: 12px; line-height: 18px; letter-spacing: 1px; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen-Sans,Ubuntu,Cantarell,'Helvetica Neue',sans-serif; color: #000000 !important; text-decoration: none !important; font-weight: 400;">
+                                    <span class="black" style="color: #000000 !important; text-decoration: none !important;" id="role-target">Front End Developer</span>
+                                </td>
+                            </tr>
+                        </table>
+                        <table width="260" class="width-260" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF" style="table-layout: fixed">
+                            <tr>
+                                <td align="left" valign="middle" style="font-size: 12px; line-height: 18px; letter-spacing: 1px; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen-Sans,Ubuntu,Cantarell,'Helvetica Neue',sans-serif; color: #000000;font-weight: 400;">
+                                    <table border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF" style="table-layout: fixed">
+                                        <tr>
+                                            <td align="left" valign="middle" style="font-size: 12px; line-height: 18px; letter-spacing: 1px; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen-Sans,Ubuntu,Cantarell,'Helvetica Neue',sans-serif; color: #000000 !important; text-decoration: underline !important; font-weight: 400;">
+                                                <span class="black" style="color: #000000 !important; text-decoration: underline !important;"><a class="black" href="tel:+61408580117" style="color: #000000 !important; text-decoration: underline !important;" id="phone-target">0408 580 117</a></span>
+                                            </td>
+                                            <td align="left" valign="middle" style="font-size: 12px; line-height: 18px; letter-spacing: 1px; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen-Sans,Ubuntu,Cantarell,'Helvetica Neue',sans-serif; color: #000000 !important; text-decoration: none !important; font-weight: 400;">
+                                                &nbsp;/&nbsp;
+                                            </td>
+                                            <td align="left" valign="middle" style="font-size: 12px; line-height: 18px; letter-spacing: 1px; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen-Sans,Ubuntu,Cantarell,'Helvetica Neue',sans-serif; color: #000000 !important; text-decoration: underline !important; font-weight: 400;">
+                                                <span class="black" style="color: #000000 !important; text-decoration: underline !important;"><a class="black" href="mailto:ashley@dotdev.com.au" style="color: #000000 !important; text-decoration: underline !important;" id="email-target">ashley@dotdev.com.au</a></span>     
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+</body>
+</html>
+
+
